@@ -4677,6 +4677,7 @@
 }
 
 .brdxb-locations-heading {
+    font-family: 'Lato';
     font-size: 38px;
     font-weight: 700;
     color: #EC6933;
@@ -4684,6 +4685,8 @@
 }
 
 .brdxb-locations-subtext {
+    font-family: 'Nunito';
+    font-weight: 500;
     font-size: 16px;
     color: #000;
     max-width: 750px;
@@ -4712,6 +4715,8 @@
 }
 
 .brdxb-location-title {
+    font-family: 'Lato';
+
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -4719,6 +4724,7 @@
 }
 
 .brdxb-location-description {
+    font-family: 'Nunito';
     font-size: 15px;
     color: #000;
     line-height: 1.7;
@@ -4726,6 +4732,7 @@
 }
 
 .brdxb-location-meta p {
+    font-family: 'Nunito';
     font-size: 15px;
     margin-bottom: 8px;
     color: #000;

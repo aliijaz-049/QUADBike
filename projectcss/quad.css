@@ -223,30 +223,6 @@
 }
 
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-/* .swiper-slide {
-    text-align: center;
-    font-size: 122px;
-    background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-button-next {
-    background-image: url(../photos/Group\ 539.png);
-}
 
 /* ===== Filter Section ===== */
 .filter-section {
@@ -4817,5 +4793,243 @@
 
     .brdxb-hero-wrapper {
         min-height: 420px;
+    }
+}
+/* ============================================================
+   ABOUT HERO SECTION (ISOLATED)
+   ============================================================ */
+
+.dxb-hero-wrap {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)),
+        url('../photos/aboutusmain.png') center/cover no-repeat;
+    border-radius: 25px;
+    padding: 48px 40px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.dxb-hero-heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+.dxb-hero-desc {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 480px;
+}
+
+.dxb-hero-wrap .col-lg-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dxb-swiper-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+}
+
+
+.dxb-btn-prev,
+.dxb-btn-next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.dxb-btn-prev:hover,
+.dxb-btn-next:hover {
+    opacity: 0.75;
+}
+
+.dxb-btn-prev img,
+.dxb-btn-next img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    display: block;
+}
+
+.dxb-swiper {
+    width: 220px;
+    overflow: visible !important;
+}
+
+
+.dxb-ride-card {
+    width: 220px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Badge */
+
+.dxb-deal-badge {
+    position: absolute;
+    top: -1px;
+    left: 9px;
+    z-index: 10;
+}
+
+.dxb-deal-badge img {
+    width: 68px;
+    display: block;
+}
+
+/* Card Layout */
+
+.dxb-card-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Image */
+
+.dxb-card-img img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px 14px 0 0;
+}
+
+/* Footer */
+
+.dxb-card-footer {
+    background: #EC6933;
+    padding: 12px 14px 40px;
+    border-radius: 0 0 14px 14px;
+    position: relative;
+}
+
+.dxb-card-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+    margin: 0;
+}
+
+/* ============================================================
+   PRICE SPLASH
+   ============================================================ */
+
+.dxb-price-splash {
+    position: absolute;
+    bottom: 10px;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 120px;
+}
+
+.dxb-price-splashs {
+    width: 100%;
+    display: block;
+}
+
+.dxb-price-tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+    white-space: nowrap;
+}
+
+.dxb-price-amount {
+    font-size: 15px;
+    font-weight: 900;
+    color: #EC6933;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .dxb-hero-wrap {
+        padding: 36px 28px;
+    }
+
+    .dxb-hero-heading {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .dxb-hero-desc {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .dxb-swiper,
+    .dxb-ride-card {
+        width: 190px;
+    }
+
+    .dxb-card-img img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .dxb-hero-wrap {
+        padding: 28px 18px;
+        border-radius: 14px;
+    }
+
+    .dxb-hero-heading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .dxb-hero-desc {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .dxb-swiper,
+    .dxb-ride-card {
+        width: 170px;
+    }
+
+    .dxb-card-img img {
+        height: 125px;
+    }
+
+    .dxb-btn-prev,
+    .dxb-btn-next {
+        width: 26px;
+        height: 26px;
+    }
+
+    .dxb-btn-prev img,
+    .dxb-btn-next img {
+        width: 26px;
+        height: 26px;
     }
 }

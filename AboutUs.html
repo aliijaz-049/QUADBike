@@ -63,71 +63,112 @@
         </nav>
   
         <!-- Hero Section -->
-        <section class="aboutus-hero-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Left Content -->
-                    <div class="col-lg-7">
-                        <h1 class="aboutus-hero-title">
-                            we promise you the <br> of a lifetime
-                        </h1>
+      <section class="dxb-hero-wrap">
+    <div class="container">
+        <div class="row align-items-center">
 
-                        <p class="aboutus-hero-text">
-                            Enjoying water sports has never been this exciting before.Choose us to experience a unique
-                            and remarkable ride across Dubai waters. We take the thrill of cruising across the waves to
-                            the next level. Our top-notch water sports equipment lends a great ride without compromising
-                            on safety.
-                        </p>
-
-
-                    </div>
-
-                    <!-- Right Promo Card -->
-                  <div class="col-lg-5 mt-5 mt-lg-0">
-
-
-                        <swiper-container class="mySwiper" navigation="true">
-                            <swiper-slide>
-                                <div class="promo-card">
-                                    <span class="discount-badge"><img src="photos/Group 588.png" alt="badge"></span>
-                                    <img src="photos/cardimg.png" alt="Quad Bike Adventure">
-                                    <div class="promo-text">
-                                        <h5 class="ptext">Bike Ride in Desert Dubai </h5>
-                                        <h5 class="ptext"> Just in</h5>
-
-                                        <div class="price-photo">
-                                            <img class="price-photos" src="photos/Vector-3.png" alt="splash">
-                                            <span class="top-price">AED 200</span>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="promo-card">
-                                    <span class="discount-badge"><img src="photos/Group 588.png" alt="badge"></span>
-                                    <img src="photos/cardimg.png" alt="Quad Bike Adventure">
-                                    <div class="promo-text">
-                                        <h5 class="ptext">Bike Ride in Desert Dubai </h5>
-                                        <h5 class="ptext"> Just in</h5>
-                                        <div class="price-photo">
-                                            <img class="price-photos" src="photos/Vector-3.png" alt="splash">
-                                            <span class="top-price">AED 200</span>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </swiper-slide>
-
-                        </swiper-container>
-
-                    </div>
-
-                </div>
+            <!-- Left Content -->
+            <div class="col-lg-7">
+                <h1 class="dxb-hero-heading">
+                    we promise you the <br> ride of a lifetime
+                </h1>
+                <p class="dxb-hero-desc">
+                    Enjoying water sports has never been this exciting before. Choose us to experience a unique
+                    and remarkable ride across Dubai waters. We take the thrill of cruising across the waves to
+                    the next level. Our top-notch water sports equipment lends a great ride without compromising
+                    on safety.
+                </p>
             </div>
-        </section>
+
+            <!-- Right Promo Card -->
+            <div class="col-lg-5 mt-5 mt-lg-0">
+
+                <div class="dxb-swiper-track">
+
+                    <!-- Custom arrow buttons OUTSIDE swiper so they always show -->
+                    <button class="dxb-btn-prev" aria-label="Previous slide">
+                        <img src="photos/Group 539.png" alt="Previous">
+                    </button>
+
+                    <swiper-container class="dxb-swiper" slides-per-view="1" loop="true">
+
+                        <!-- Slide 1 -->
+                        <swiper-slide>
+                            <div class="dxb-ride-card">
+                                <div class="dxb-deal-badge">
+                                    <img src="photos/Group 588.1.png" alt="Discount Badge">
+                                </div>
+                                <div class="dxb-card-inner">
+                                    <div class="dxb-card-img">
+                                        <img src="photos/aboutusmain1.png" alt="Quad Bike Adventure">
+                                    </div>
+                                    <div class="dxb-card-footer">
+                                        <h5 class="dxb-card-label">Bike Ride in Desert Dubai</h5>
+                                        <h5 class="dxb-card-label">Just in</h5>
+                                        <div class="dxb-price-splash">
+                                            <img class="dxb-price-splashs" src="photos/Vectorus.png" alt="Price Splash">
+                                            <span class="dxb-price-tag">
+                                                AED <span class="dxb-price-amount">200</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                        <!-- Slide 2 -->
+                        <swiper-slide>
+                            <div class="dxb-ride-card">
+                                <div class="dxb-deal-badge">
+                                    <img src="photos/Group 588.1.png" alt="Discount Badge">
+                                </div>
+                                <div class="dxb-card-inner">
+                                    <div class="dxb-card-img">
+                                        <img src="photos/aboutusmain1.png" alt="Quad Bike Adventure">
+                                    </div>
+                                    <div class="dxb-card-footer">
+                                        <h5 class="dxb-card-label">Bike Ride in Desert Dubai</h5>
+                                        <h5 class="dxb-card-label">Just in</h5>
+                                        <div class="dxb-price-splash">
+                                            <img class="dxb-price-splashs" src="photos/Vectorus.png" alt="Price Splash">
+                                            <span class="dxb-price-tag">
+                                                AED <span class="dxb-price-amount">200</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                    </swiper-container>
+
+                    <button class="dxb-btn-next" aria-label="Next slide">
+                        <img src="photos/Group 491.png" alt="Next">
+                    </button>
+
+                </div><!-- /dxb-swiper-track -->
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Swiper navigation script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiperEl = document.querySelector('.dxb-swiper');
+        const prevBtn  = document.querySelector('.dxb-btn-prev');
+        const nextBtn  = document.querySelector('.dxb-btn-next');
+
+        prevBtn.addEventListener('click', function () {
+            swiperEl.swiper.slidePrev();
+        });
+        nextBtn.addEventListener('click', function () {
+            swiperEl.swiper.slideNext();
+        });
+    });
+</script>
     </div>
     
     <div class="container">

@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <div class="container px-0 px-lg-3">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-lg-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            
+            <div class="container  px-0 px-lg-3">
                 <a href="#" class="navbar-brand">
                     <img src="photos/logo.png" alt="Quad Bike Logo" class="logo">
                 </a>
@@ -63,13 +63,14 @@
                 </div>
             </div>
         </nav>
-
+<div class="container  px-0 px-lg-3">
         <!-- Hero Section -->
-        <section class="hero-section">
+       <section class="hero-section">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Left Content -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 col-md-12">
+                        
                         <h1 class="hero-title">
                             Unleash the Adventure with
                             Our High Performance
@@ -89,47 +90,73 @@
                     </div>
 
                     <!-- Right Promo Card -->
-                    <div class="col-lg-5 mt-5 mt-lg-0">
-
-
-                        <swiper-container class="mySwiper" navigation="true">
+                <div class="col-xl-5 mt-5 mt-lg-0">
+                
+                    <div class="awb-swiper-track">
+                
+                        <button class="awb-btn-prev" aria-label="Previous slide">
+                            <img src="photos/Group 539.png" alt="Previous">
+                        </button>
+                
+                        <swiper-container id="mySwiper" class="mySwiper" slides-per-view="1" loop="true">
+                
+                            <!-- Slide 1 -->
                             <swiper-slide>
                                 <div class="promo-card">
-                                    <span class="discount-badge"><img src="photos/Group 588.png" alt="badge"></span>
-                                    <img src="photos/cardimg.png" alt="Quad Bike Adventure">
-                                    <div class="promo-text">
-                                        <h5 class="ptext">Bike Ride in Desert Dubai </h5>
-                                        <h5 class="ptext"> Just in</h5>
-
-                                        <div class="price-photo">
-                                            <img class="price-photos" src="photos/Vector-3.png" alt="splash">
-                                            <span class="top-price">AED 200</span>
-                                        </div>
-
+                                    <div class="discount-badge">
+                                        <img src="photos/Group 588.png" alt="Discount Badge">
                                     </div>
-
+                                    <div class="awb-card-inner">
+                                        <div class="awb-card-img">
+                                            <img src="photos/cardimg.png" alt="Quad Bike Adventure">
+                                        </div>
+                                        <div class="promo-text">
+                                            <h5 class="ptext">Bike Ride in Desert Dubai</h5>
+                                            <h5 class="ptext">Just in</h5>
+                                            <div class="price-photo">
+                                                <img class="price-photos" src="photos/Vector-3.png" alt="Price Splash">
+                                                <span class="top-price">
+                                                    AED <span class="awb-price-amount">200</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
+                
+                            <!-- Slide 2 -->
                             <swiper-slide>
                                 <div class="promo-card">
-                                    <span class="discount-badge"><img src="photos/Group 588.png" alt="badge"></span>
-                                    <img src="photos/cardimg.png" alt="Quad Bike Adventure">
-                                    <div class="promo-text">
-                                        <h5 class="ptext">Bike Ride in Desert Dubai </h5>
-                                        <h5 class="ptext"> Just in</h5>
-                                        <div class="price-photo">
-                                            <img class="price-photos" src="photos/Vector-3.png" alt="splash">
-                                            <span class="top-price">AED 200</span>
-                                        </div>
-
+                                    <div class="discount-badge">
+                                        <img src="photos/Group 588.png" alt="Discount Badge">
                                     </div>
-
+                                    <div class="awb-card-inner">
+                                        <div class="awb-card-img">
+                                            <img src="photos/cardimg.png" alt="Quad Bike Adventure">
+                                        </div>
+                                        <div class="promo-text">
+                                            <h5 class="ptext">Bike Ride in Desert Dubai</h5>
+                                            <h5 class="ptext">Just in</h5>
+                                            <div class="price-photo">
+                                                <img class="price-photos" src="photos/Vector-3.png" alt="Price Splash">
+                                                <span class="top-price">
+                                                    AED <span class="awb-price-amount">200</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
-
+                
                         </swiper-container>
-
+                
+                        <button class="awb-btn-next" aria-label="Next slide">
+                            <img src="photos/Group 491.png" alt="Next">
+                        </button>
+                
                     </div>
+                
+                </div>
 
                 </div>
             </div>
@@ -202,7 +229,8 @@
                 </div>
             </div>
         </section>
-
+</div>
+<div class="container">
         <!-- Packages Section -->
         <section class="packages-section" id="packages">
             <div class="container">
@@ -1471,7 +1499,7 @@
                                             required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                        <button type="submit" class="contact-btn w-100">Send Message</button>
                                     </div>
                                 </div>
                             </form>

@@ -1,3 +1,25 @@
+   
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiperEl = document.querySelector('.dxb-swiper');
+        const prevBtn  = document.querySelector('.dxb-btn-prev');
+        const nextBtn  = document.querySelector('.dxb-btn-next');
+
+        prevBtn.addEventListener('click', function () {
+            swiperEl.swiper.slidePrev();
+        });
+        nextBtn.addEventListener('click', function () {
+            swiperEl.swiper.slideNext();
+        });
+    });
+                                
+    
+    
+    
+    
+    
+    
+    
+    
     function scrollCarousel(direction) {
             const track = document.getElementById('testimonialTrack');
             const card = track.querySelector('.yacht-testimonial-card');
@@ -7,12 +29,6 @@
             }
         }
 
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
    
         document.addEventListener('click', function (event) {
             const navbar = document.getElementById('navMenu');
@@ -29,4 +45,13 @@
                 bsCollapse.hide();
             }
         });
+                const swiper = document.getElementById('mySwiper');
+
+document.querySelector('.awb-btn-prev').addEventListener('click', () => {
+    swiper.swiper.slidePrev();
+});
+
+document.querySelector('.awb-btn-next').addEventListener('click', () => {
+    swiper.swiper.slideNext();
+});
     

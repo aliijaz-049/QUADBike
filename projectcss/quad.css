@@ -90,11 +90,11 @@
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
         url('../photos/background.png') center/cover no-repeat;
-    min-height: 600px;
-    padding: 60px 0 120px;
+    min-height: 570px;
+    padding: 60px 30px 30px 30px;
     position: relative;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .hero-title {
@@ -134,85 +134,7 @@
 }
 
 /* ===== Promo Card ===== */
-.promo-card {
 
-    border-radius: 25px;
-    padding: 20px;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.discount-badge {
-    width: 100%;
-    height: auto;
-
-
-}
-
-.discount-badge {
-    position: absolute;
-    top: 3px;
-    left: 25px;
-    padding: 10px 24px;
-    border-radius: 30px;
-    font-weight: 700;
-    font-size: 1.3rem;
-
-    z-index: 10;
-}
-
-.promo-text {
-
-    width: 384px;
-    height: auto;
-    border-radius: 0 0 12px 12px;
-    background: #EC6933;
-    padding: 14px 20px;
-    position: relative;
-}
-
-.ptext {
-    color: #FFF;
-    font-family: 'Lato';
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: -0.32px;
-
-}
-
-.top-price {
-    color: #000 !important;
-    font-family: 'Lato';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: -0.24px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-}
-
-.price-photo.price-photos {
-    position: relative;
-}
-
-.price-photos {
-    width: 100%;
-    display: block;
-}
-
-.price-photo {
-    position: absolute;
-    right: 70px;
-    bottom: 13px;
-    width: 170px;
-    height: auto;
-}
 
 
 
@@ -221,6 +143,255 @@
     gap: 20px !important;
     display: flex;
 }
+
+
+
+
+
+.awb-swiper-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+}
+
+/* Buttons */
+.awb-btn-prev,
+.awb-btn-next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.awb-btn-prev:hover,
+.awb-btn-next:hover {
+    opacity: 0.75;
+}
+
+.awb-btn-prev img,
+.awb-btn-next img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Swiper */
+.mySwiper {
+    width: 350px;
+    overflow: visible !important;
+}
+
+/* Card */
+.promo-card {
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Badge */
+.discount-badge {
+    position: absolute;
+    top: -1px;
+    left: 9px;
+    z-index: 10;
+}
+
+.discount-badge img {
+    width:100%;
+    display: block;
+}
+
+/* Card Inner */
+.awb-card-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Image */
+.awb-card-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px 14px 0 0;
+}
+
+/* Footer */
+.promo-text {
+    height: auto;
+    border-radius: 0 0 12px 12px;
+    background: #EC6933;
+    padding: 14px 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Headings */
+.ptext {
+    color: #FFF;
+        font-family: 'Lato';
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.32px;
+}
+
+/* Price Splash */
+.price-photo {
+    position: absolute;
+    bottom: 20px;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+.price-photos {
+    width: 100%;
+    display: block;
+}
+
+/* Price Text */
+.top-price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+    white-space: nowrap;
+}
+
+/* Price Amount */
+.awb-price-amount {
+    font-size: 15px;
+    font-weight: 900;
+    color: #EC6933;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .mySwiper,
+    .promo-card {
+        width: 190px;
+    }
+
+    .awb-card-img img {
+        height: 140px;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mySwiper,
+    .promo-card {
+        width: 500px;
+    }
+
+    .awb-card-img img {
+        height: 350px;
+    }
+     .ptext{
+        font-size: 31px;
+    }
+    .discount-badge img{
+        width: 120%;
+        display: block;
+
+    }
+   .discount-badge{
+    left: 40px;
+    top:-4px;
+   }
+    .price-photo {
+        width: 43%;
+        display: block;
+        bottom: 9px;
+    }
+                .awb-btn-prev,
+                .awb-btn-next {
+                    width: 40px;
+                    height: 40px;
+                }
+        
+                .awb-btn-prev img,
+                .awb-btn-next img {
+                    width: 40px;
+                    height: 40px;
+                }
+.hero-buttons{
+    flex-direction: row !important;
+
+}
+.filter-label{
+    font-size: 13px !important;
+}
+
+}
+@media (max-width: 480px) {
+
+    .mySwiper,
+    .promo-card {
+        width: 270px;
+    }
+.promo-text{
+    padding: 10px 20px;
+}
+
+
+    
+    .ptext {
+        font-size: 20px;
+    }
+    .discount-badge img {
+            width: 70%;
+            display: block;
+        }
+.price-photo {
+            width: 50%;
+            display: block;
+            bottom: 14px;
+        }    
+
+    .awb-card-img img {
+        height: auto;
+    }
+
+    .awb-btn-prev,
+    .awb-btn-next {
+        width: 26px;
+        height: 26px;
+    }
+
+    .awb-btn-prev img,
+    .awb-btn-next img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -243,9 +414,10 @@
 
 .filter-title {
     color: black;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Lato';
 
-    font-size: 1.5rem;
+    font-size:36px !important;
 }
 
 .filter-label {
@@ -1594,13 +1766,8 @@
     }
 
     .quad-bike-image {
-        float: none;
         margin: 0 auto 15px;
         display: block;
-        text-align: center;
-    }
-
-    .quad-bike-text {
         text-align: center;
     }
 
@@ -1660,7 +1827,7 @@
     }
 
     /* Promo Card */
-    .promo-text {
+    /* .promo-text {
         max-width: 100%;
     }
 
@@ -1681,7 +1848,7 @@
 
     .top-price {
         font-size: 20px;
-    }
+    } */
 
     /* Filter Section */
     .filter-section {
@@ -1894,7 +2061,7 @@
     }
 
     /* Promo Card */
-    .ptext {
+    /* .ptext {
         font-size: 24px;
         line-height: 26px;
     }
@@ -1906,7 +2073,7 @@
 
     .top-price {
         font-size: 18px;
-    }
+    } */
 
     /* Sections */
     .section-title,
@@ -2116,7 +2283,7 @@
     }
 
     /* Promo Card */
-    .ptext {
+    /* .ptext {
         font-size: 20px;
         line-height: 24px;
     }
@@ -2133,7 +2300,7 @@
     .discount-badge {
         padding: 8px 16px;
         font-size: 0.9rem;
-    }
+    } */
 
     /* Filter Section */
     .filter-section {
@@ -2554,9 +2721,6 @@
         font-size: 18px;
     }
 
-    .ptext {
-        font-size: 28px;
-    }
 
     .package-title {
         font-size: 1rem;
@@ -2606,18 +2770,6 @@
         line-height: 22px;
     }
 
-    .ptext {
-        font-size: 16px;
-    }
-
-    .price-photo {
-        width: 90px;
-        right: 15px;
-    }
-
-    .top-price {
-        font-size: 14px;
-    }
 }
 
 /*=============================== TESTIMONIALS SECTION ========================================================= */
@@ -3423,7 +3575,7 @@
     min-height: 100px;
 }
 
-.contact-form .btn-primary {
+.contact-btn {
     width: 100%;
     background-color: white;
     color: #000;
@@ -3437,8 +3589,10 @@
     margin-top: 15px;
 }
 
-.contact-form .btn-primary:hover {
+
+.contact-btn:hover {
     background-color: #f5f5f5;
+    color: #000;
     transform: translateY(-2px);
 }
 
